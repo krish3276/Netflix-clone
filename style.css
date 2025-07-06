@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+.main {
+    background-image: url(img/original.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: Max(1200px, 100%);
+    height: 100vh;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.727);
+}
+
+.logo img {
+    position: relative;
+    width: 150px;
+    z-index: 10;
+}
+
+nav {
+    max-width: 80vw;
+    padding-top: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* justify-items: center; */
+    align-items: center;
+    height: 50px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.btn1 {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.348);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    height: 5vh;
+    width: 8vw;
+    margin-right: 5px;
+
+}
+
+.btn2 {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    width: 5vw;
+    /* box-sizing: border-box; */
+}
+
+.hero {
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero #big {
+    width: 35%;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.hero #medium {
+    width: 40%;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.hero #small {
+    margin-top: 25px;
+    width: 40%;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+
+.input {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.input input {
+    margin: 10px;
+    height: 45px;
+    width: 50vh;
+    background-color: rgba(0, 0, 0, 0.618);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+}
+
+.input button {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 30vh;
+    font-size: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.curve-wrapper {
+    height: 150%;
+    background: black;
+    /* Main background */
+    position: relative;
+    overflow: hidden;
+}
+
+.curve {
+    position: absolute;
+    top: -50px;
+    /* Adjust to move the curve up/down */
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(ellipse at center, #ff004f 0%, #000000 80%);
+    border-top-left-radius: 100% 100px;
+    border-top-right-radius: 100% 100px;
+}
+
+.trending {
+    /* background-color: black; */
+    height:auto;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 35px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.card img {
+    background-size: fill;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.trending h2 {
+    margin-top: 8vh;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 40px;
+    padding-left: 23vh;
+    /* padding: 20px; */
+
+}
+
+.card-row {
+    margin-top: 8vh;
+    counter-reset: card-rank;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.card::before {
+    counter-increment: card-rank;
+    content: counter(card-rank);
+    position: absolute;
+    left: -15px;
+    top: 150px;
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 2;
+    font-family: "Martel Sans", sans-serif;
+    opacity: 0.8;
+    /* Netflix-like effect */
+}
+
+.card:nth-child(1)::before {
+    color: white;
+    font-size: 80px;
+    opacity: 1;
+}
+
+.card:nth-child(2)::before {
+    color: white;
+    font-size: 80px;
+    opacity: 1;
+}
+
+.card:nth-child(3)::before {
+    color: white;
+    font-size: 80px;
+    opacity: 1;
+
+}
+
+.card:nth-child(n+4)::before {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    opacity: 1;
+
+}
+
+.more-reasons {
+    background-color: black;
+    padding: 60px 4vw;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.more-reasons h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.reason-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 0px 95px;
+    margin-top: 0%;
+}
+
+.reason-card {
+    flex: 1 1 220px;
+    background: linear-gradient(135deg, #1a1e40, #1f0f1a);
+    box-shadow: 0 0 20px rgba(255, 0, 80, 0.1);
+    /* background: linear-gradient(135deg, #1e1e1e, #0f0f0f); */
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    min-height: 230px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.reason-card h3 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10;
+}
+
+.reason-card p {
+    font-family: "Martel Sans", sans-serif;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #ccc;
+    flex-grow: 1;
+}
+
+.reason-card img {
+    
+    width: 100px;
+    align-self: flex-end;
+    
+}
+.more-reasons h2{
+    font-family: "Martel Sans", sans-serif;
+    padding-left: 12vh;
+}
+
+/* for responsive design */
