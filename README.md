@@ -21,15 +21,6 @@ A basic clone of the Netflix landing page built using **HTML** and **CSS**.
 
 ![Netflix Clone Preview](./img/bg.jpg)  
 
-
-## 📂 Folder Structure
-Netflix/
-├── index.html
-├── style.css
-├── img/
-└── video/
-
-
 ## 🙋‍♂️ Author
 
 **Krish Sirsath**  
