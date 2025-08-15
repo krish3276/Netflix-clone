@@ -2,14 +2,13 @@
 
 A basic clone of the Netflix landing page built using **HTML** and **CSS**.
 
-> ⚠️ This project is currently **in development**. It is not fully responsive yet.
-
+> ⚠️ This project is currently **in development**.
 ## 🚧 Current Status
 
 - [x] Basic layout and sections created  
 - [x] Navigation bar and hero section  
 - [x] Image and video assets added  
-- [ ] Mobile responsiveness – _coming soon_  
+- [x] Mobile responsiveness 
 - [ ] Additional animations and interactivity – _in progress_
 
 ## 🛠️ Tech Stack
